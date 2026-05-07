@@ -1,0 +1,270 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+html{
+font-size:1rem;
+scroll-behavior: smooth; 
+scroll-padding-top: 110px;
+}
+
+/*el contenedor de toda la pagina*/
+.contenedor-pag{
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+body{
+background-color: rgb(22, 33, 110) ;
+font-family: 'Montserrat', sans-serif;
+color: #f7f8fe;
+text-align: center;
+background-image: url('Imagenes/fondo_colores.jpg'), url('Imagenes/fondo_colores.jpg');
+background-repeat: repeat-y, repeat-y;
+background-position: top left, top right;
+background-size: 200px auto, 200px auto;
+
+}
+
+
+/*el cont de la barra de nav*/
+#main-header{
+position: sticky;
+top:0;
+z-index: 5;
+background-color: #fafcff6e;
+width: 1120px;
+margin: 0 auto;
+}
+
+#main-header .navigation{
+display: inline-block;
+vertical-align: middle;
+text-align: center;
+}
+
+#main-header .navigation ul li{
+list-style: none;
+width: 160px;
+display: inline-block;
+position: relative;
+transition: all 0.7s linear;
+}
+
+#main-header .navigation ul li a{
+padding: 10px 0;
+margin:5px 5px;
+text-decoration: none;
+color:#d56011;
+display: block;
+background-color:#fcf5f0;
+transition: all 0.5s;
+border-radius:25px;
+}
+
+
+#main-header .navigation ul li a:hover{
+background-color: #d74329;
+color: #ffefef;
+transform: scale(1.08)
+}
+
+.banner-home{
+height: 500px;
+margin: 20px  100px;
+background-color: #e6eaff3a;
+background-image: url('Imagenes/el-quilmes-rock.jpg');
+background-repeat:repeat;
+background-size: cover;
+position: relative;
+}
+
+.banner-home h2{
+position: absolute;
+bottom:1px;
+font-size: 1.2rem;
+background-color: rgba(240, 248, 255, 0.255);
+margin: 5px;
+width: 400px;
+height: 30px;
+}
+
+#dynamic-bg{
+animation-name: dynamic-bg;
+animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes dynamic-bg{
+   
+0%{
+background-image: url('Imagenes/el-quilmes-rock.jpg');
+}
+25%{
+background-image: url('Imagenes/banner2.png');
+}
+    
+50%{
+background-image: url('Imagenes/qqUIL.jpg');
+}
+    
+75%{
+background-image: url('Imagenes/banner8.jpg');
+}
+    
+100%{
+background-image: url('Imagenes/banner10.jpg');
+}
+}
+
+h2{
+text-align: left;
+font-size: 2rem;
+background-color: #cb184d;
+height: 40px;
+width: 1000px;
+margin: auto;
+padding:0 15px ;
+border-radius: 5px;
+}
+
+h3{
+width: 500px;
+margin: 10px auto;
+color: #f8e6eb;
+background-color: #f6c176;
+border-radius: 20px;
+}
+
+p{
+text-align: justify;
+margin: 50px auto;
+width: 1000px;
+}
+
+img{
+border-radius: 30px;
+margin: 10px auto;
+}
+
+#momentos div,
+#actividad div,
+#historia div,
+#contacto div{
+width: 400px;
+display: inline-block;
+vertical-align: middle;
+}
+
+
+#momentos div p,
+#actividad div p,
+#historia div p{
+background-color: #e6eaff37;
+width: 300px;
+padding: 20px;
+border-radius: 20px;
+border: #fb4a4ae0 solid 2px;
+}
+
+
+#fuentes h2{
+background-color: #e6eaff42;
+font-size: 1rem;
+height: 25px;
+padding-top: 2px;   
+}
+
+
+#fuentes ul li{
+padding: 10px;
+display: inline-block;
+vertical-align: middle;
+}
+
+#fuentes ul li a{
+text-decoration: underline;
+color: #e6eaff;
+background-color: #da353565;
+}
+
+
+
+#historia p a,
+#contacto p a{
+color: #e6eaff;
+}
+
+#fuentes ul li a:hover,
+#historia p a:hover,
+#contacto p a:hover{
+color: #ffc400;  
+}
+
+
+#galeriafechas figure{
+display: inline-block;
+width: 20%;
+margin: 10px;
+}
+
+#galeriafechas figure img{
+width: 100%;
+transition: all 0.3s; 
+}
+
+
+#galeriafechas figure img:hover{
+transform: scale(1.06)
+}
+
+
+
+
+#to-top{
+position: fixed;
+width: 65px;
+height: 25px;
+padding:20px;
+background-color: rgb(252, 203, 131);
+bottom: 20px;
+right: 30px;
+border-radius: 50%;
+text-decoration: none;
+text-align: center;
+transition: all 0.3s;
+}
+
+#to-top:hover{
+background-color: #d62f2f;
+color: #fece5e;
+transform: scale(1.06)
+}
+
+
+#contacto div p{
+width: 400px;
+margin: 10px auto;
+padding: 10px;
+display: inline-block;
+vertical-align:middle;
+border-radius: 50px;
+background-color: #cb184e95;
+}
+
+#contacto figure img{
+border-radius: 100px;
+}
+
+
+.linea{
+width:1000px;
+height: 2px;
+background-color: #f49b0c;
+margin: 20px auto;
+}
